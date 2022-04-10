@@ -4,6 +4,7 @@
 \usepackage{amsfonts}  
 \usepackage{graphicx}  
 \usepackage{times}
+\usepackage{gensymb}
 \graphicspath{{images/}}
 \DeclareGraphicsExtensions{.pdf,.eps,.ps,.png,.jpg,.jpeg}
 \newcommand{\C}{\circ}
@@ -20,16 +21,21 @@
 \includegraphics[scale=0.22]{main.jpeg}
 
 \textbf{Solution:}
-$$sin^2 34^\C + sin^2 56^\C +2tan 18^\C tan 72^\C - cot^2 30^\C $$
+\begin{align}
+= \sin^2 34\degree+ \sin^2 56\degree+2\tan 18\degree \tan 72\degree - \cot^2 30\degree
+\end{align}
+\begin{align}
+ \sin^2 56\degree &= \sin^2 (90\degree - 34\degree)\\
+  \implies \sin^2 56\degree &= \cos^2 (56\degree)\\
+  \newline
+  2\tan18\degree\tan72\degree &= 2\tan18\degree\tan(90 - 18)\degree\\
+  \implies 2\tan18\degree\tan72\degree &= 2\tan18\degree\cot18\degree
+ \end{align}
+ \begin{align}
+= sin^2 34\degree +cos^2 34\degree +2tan18\degree cot18\degree - cot^2 30\degree \end{align}
+\begin{align}
+&= 1 + 2tan18\degree \frac{1}{tan1\degree} - (\sqrt{3})^2\\
+&= 1 + 2 - 3
+ = 0\end{align}
 
-
-$$sin^2 34^\C + sin^2(90^\C - 34^\C)+2tan18^\C tan(90^\C- 18^\C) $$
-$$- cot^2 30^\C$$
-
-$$sin^2 34^\C + cos^2 34^\C +2tan18^\C cot18^\C - cot^2 30^\C $$
-
-$$1 + 2tan18 ^\C \frac{1}{tan18^\C} - (\sqrt{3})^2$$
-
-$$1 + 2 - 3$$
-$$0$$
 \end{document}
